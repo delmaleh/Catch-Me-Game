@@ -76,6 +76,10 @@ input[type=submit] {
     background-color: pink;
     color: white;
 }
+input{
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 input[type=email] {
     width: 100%;
     border: pink 5px solid;
