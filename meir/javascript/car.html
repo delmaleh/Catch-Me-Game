@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/main.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+     
+        <div class="container" id="formDiv">
+          <table>  
+          <tr>
+            <td>            <select class="form-control formElements" multiple name="" id="category">
+              <option value="">Select a Category</option>
+              <option value="Economy">Economy</option>
+              <option value="Sport">Sport</option>
+              <option value="SUV">SUV</option>
+              <option value="MidSize">Mid-Size</option>
+              <option value="Luxury">Luxury</option>
+            </select>
+          </td>
+
+
+        </tr>
+        <tr>
+          <td>
+            <button onclick="addCategory()">add</button><button onclick="removeCategory()">remove</button>
+          </td>
+
+
+        </tr>
+          
+          </table>
+            <select class="form-control formElements" name="" id="make">
+              <option value="">Select a Make</option>
+              <option value="Acura">Acura</option>
+              <option value="Aston Martin">Aston Martin</option>
+              <option value="Audi">Audi</option>
+              <option value="Bentley">Bentley</option>
+              <option value="BMW">BMW</option>
+              <option value="Buick">Buick</option>
+              <option value="Cadillac">Cadillac</option>
+              <option value="Chevrolet">Chevrolet</option>
+              <option value="Chrysler">Chrysler</option>
+              <option value="Dodge">Dodge</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Ford">Ford</option>
+              <option value="Gmc">Gmc</option>
+              <option value="Honda">Honda</option>
+              <option value="Hummer">Hummer</option>
+              <option value="Hyundai">Hyundai</option>
+              <option value="Infiniti">Infiniti</option>
+              <option value="Isuzu">Isuzu</option>
+              <option value="Jaguar">Jaguar</option>
+              <option value="Jeep">Jeep</option>
+              <option value="Kia">Kia</option>
+              <option value="Lamborghini">Lamborghini</option>
+              <option value="Land Rover">Land Rover</option>
+              <option value="Lexus">Lexus</option>
+              <option value="Lincoln">Lincoln</option>
+              <option value="Lotus">Lotus</option>
+              <option value="Maserati">Maserati</option>
+              <option value="Maybach">Maybach</option>
+              <option value="Mazda">Mazda</option>
+              <option value="Mercedes-Benz">Mercedes-Benz</option>
+              <option value="Mercury">Mercury</option>
+              <option value="Mini">Mini</option>
+              <option value="Mitsubishi">Mitsubishi</option>
+              <option value="Nissan">Nissan</option>
+              <option value="Pontiac">Pontiac</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Rolls-Royce">Rolls-Royce</option>
+              <option value="Saab">Saab</option>
+              <option value="Saturn">Saturn</option>
+              <option value="Subaru">Subaru</option>
+              <option value="Suzuki">Suzuki</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Volkswagen">Volkswagen</option>
+              <option value="Volvo">Volvo</option>
+            </select>
+            <input class="form-control formElements" placeholder="Enter the Model" type="text"id="model"/>
+            <input class="form-control formElements" placeholder="Enter the Price" type="text" id="price"/>
+            <input class="form-control formElements" type="file" id="photo" />
+            <button onclick="addCarByForm()">Add Car by form</button>
+            <button onclick="addCar()">Add Car</button>
+            <button onclick="deleteCar(prompt('enter a plate'))">Delete car</button>
+    </div>
+    
+    <div id="cat-cont"></div>
+    <div id="main">
+
+    </div>
+    
+    <script>
+        search();
+        listCars();
+    </script>
+   
+</body>
+</html>
