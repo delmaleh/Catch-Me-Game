@@ -22,7 +22,7 @@ function getUsers(){
     
     
     var jsObjt=localStorage.getItem("catch");
-    alert("ok")
+    
     
     if (jsObjt==null) { 
         return new Array();
