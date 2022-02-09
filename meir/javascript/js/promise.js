@@ -5,11 +5,13 @@
 // 3 - Chine -- 9696
 // 4 - Russie -- 7777
 // 5 - Israel -- 2626
+// daniel --4325
 
 getFranceCode(1234)
   .then(getChineCode)
   .then(getRussieCode)
   .then(getIsraelCode)
+  .then(getDanielCode)
   .then(successHandler)
   .catch(errorHandler)
   .finally(() => {
@@ -30,10 +32,23 @@ function getFranceCode(code) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("France is soooo nice");
-      if (code === 12345) {
+      if (code === 1234) {
         resolve(2546);
       } else {
         reject("USA gave me the wrong code");
+      }
+    }, parseInt(Math.random() * 2000));
+  });
+}
+
+function getDanielCode(code) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Daniel biuffle");
+      if (code === 2626) {
+        resolve(4325);
+      } else {
+        reject("israel gave me the wrong code");
       }
     }, parseInt(Math.random() * 2000));
   });

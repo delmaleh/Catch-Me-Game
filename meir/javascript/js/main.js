@@ -51,7 +51,7 @@ function listCars(){
     
     Cars.forEach(addCar);
     mydiv.innerHTML=toAppend;
-    function addCar(car,index){
+    function addCar(car){
         toAppend+=`<div id="car${car.id}" class="car cat-${car.category.join(" cat-")}"><h3 class="category">${car.category.join(",")}</h3>
         <img id="imgcar" src="img/${car.image}" alt="">
         <button class="btnCar blt" onclick="removeCar(this,'${car.id }')">X</button>
