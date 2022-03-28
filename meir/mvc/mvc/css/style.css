@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  padding: 10px 20px;
+  
+  border-radius: 20px;
+}
+
+li:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(147, 255, 170);
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover {
+    color: rgb(224, 255, 87);
+}
+
+main {
+  height: 95vh;
+}
+header {
+  height: 5vh;
+  background-color: black;
+}

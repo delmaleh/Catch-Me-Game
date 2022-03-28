@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dialog.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="trigger" id="main">promise</button>
+    
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1 id="question"></h1>
+            <input type="text" id="topic" placeholder=""/>
+        <div><button id="ok">ok</button><button id="cancel">cancel</button></div>
+        
+        </div>
+    </div> 
+    <script>
+        const modal = document.querySelector(".modal");
+        const trigger = document.querySelector(".trigger");
+        const closeButton = document.querySelector(".close-button");
+        
+        function toggleModal() {
+            modal.classList.toggle("show-modal");
+        }
+        
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+        }
+        
+        trigger.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick);
+        </script> 
+        <script src="js/modal/app.js" type="module"></script>
+
+</body>
+</html>
