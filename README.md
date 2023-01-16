@@ -1,1 +1,1 @@
-# burger-time
+# Catch Me Game Javascript
